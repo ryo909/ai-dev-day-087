@@ -66,7 +66,7 @@
   "mechanic": "status_shelf",
   "input_style": "message_rows",
   "output_style": "action_shelf",
-  "output_label": "ここを見ればOKです",
+  "output_label": "今日返す約束です",
   "audience_promise": "終業前に抜けている約束だけを拾える。",
   "publish_hook": "相手、約束した物、期限、元メッセージの一文を入れると、返答済み・添付待ち・確認待ちが棚で分かれる。",
   "engine": "brief_driven",
