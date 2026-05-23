@@ -1,11 +1,11 @@
 {
   "title": "返信約束抜け棚",
   "archetype": "status_shelf",
-  "interaction_model": "structured_multi_field",
-  "primary_layout": "two_column_workbench",
-  "result_presentation_style": "stacked_result_cards",
-  "palette_motif": "neutral slate / white",
-  "main_cta": "サンプルで試す",
-  "intro_variant": "generic",
-  "ui_variant": "generic"
+  "interaction_model": "editable_promise_rows_to_followup_shelves",
+  "primary_layout": "promise_editor_with_followup_shelf",
+  "result_presentation_style": "reply_due_shelf_and_missing_tags",
+  "palette_motif": "返信約束インク",
+  "main_cta": "終業前の約束で試す",
+  "intro_variant": "reply_promise_shelf",
+  "ui_variant": "promise-shelf"
 }
