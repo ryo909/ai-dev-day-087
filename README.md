@@ -1,42 +1,40 @@
-# ai-dev-exp-template
+# Day087 — 返信約束抜け棚
 
-Vite-based single-page template for `ai-dev-day-XXX` repositories.
+> メールやチャットで約束した返答・添付・確認事項を、終業前に棚卸しするツールです。
+>
+> Complexity Tier: medium
+>
+> Selected Components: none
+>
+> Family / Mechanic: message_promise_followup / status_shelf
+>
+> Input -> Output: message_rows -> action_shelf
+>
+> Audience Promise: 終業前に抜けている約束だけを拾える。
 
-## Required meta.json fields
+## 使い方
 
-- `day` (e.g. `Day001`)
-- `title`
-- `description`
-- `genre`
-- `theme`
-- `story_summary`
+このツールでできること
+メールやチャットで約束した返答・添付・確認事項を、終業前に棚卸しするツールです。
 
-## Theme behavior
+こんな時に使います
+終業前、今日返すと約束したものが抜けていないか確認する時に使います。
 
-- `src/themes.js` defines 8 visual themes.
-- Runtime applies `meta.json.theme` using CSS variables.
-- Day repos should set `theme` with a day-seeded deterministic selector.
+使い方
+1. 項目を入れる
+2. 追加や編集をする
+3. 結果を見る
 
-## Component Packs (tiered build)
+## Story
 
-- Template reads `complexity_tier` / `selected_components` from `meta.json`.
-- `selected_components` is missing: runs as small tier baseline with all packs OFF.
-- Unknown component names are ignored safely.
-- Each pack can be toggled independently and app core flow still works.
+- [制作ストーリー](./STORY.md)
+- Complexity hint: Implement the locked brief with one clear hero interaction and keep the main screenshot readable.
+- Publish hook: 相手、約束した物、期限、元メッセージの一文を入れると、返答済み・添付待ち・確認待ちが棚で分かれる。
 
-Supported packs:
+## Demo
 
-- `reason_panel`
-- `sample_inputs`
-- `local_storage`
-- `comparison_view`
-- `history_panel`
-- `export_suite`
-- `step_ui`
+🌐 [GitHub Pages](https://ryo909.github.io/ai-dev-day-087/)
 
-### Quality/Fallback integration
+---
 
-- Every pack root includes `data-quality-marker="<pack_name>"` for evaluator detection.
-- Runtime manifest is published to `window.__COMPONENT_PACKS__` and script node `#componentPackManifest`.
-- Static fallback manifest exists at `public/component-pack-manifest.json`.
-- Medium/Large can increase visual depth safely by selecting more packs without changing core logic.
+Day087 / #100日開発
